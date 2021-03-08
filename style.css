@@ -1,3 +1,54 @@
+/*importation police de caractère*/
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
 body{
-    background-color: aqua;
+    background:#DEEBFF;
+    }
+.container {
+    width: 1440px;
+    background:#ffffff;
+    margin: auto;
+    font-family: 'Raleway', sans-serif;
+    }
+/*
+header{
+    background: pink;
+    display:flex;
+    justify-content:space-between;
+    }
+nav{
+    background:green;
+    display:flex;
+    justify-content: flex-end;
+}*/
+section{
+    margin-left: 50px; margin-right: 50px;
+    }
+.section2{
+    display: flex;
+    justify-content: space-between;
+    }
+aside{
+    background: #f2f2f2;
+    border-radius: 20px;
+    }
+.aside1{
+    width:880px;
+    }
+.aside2{
+    width:420px;
+    }
+
+
+footer{
+    background:#f2f2f2;
+    display: flex;
+    justify-content: flex-start;
+    }
+footer h2{
+    padding: 0px; margin:0px;
+    }
+footer div{
+    /*background:red;*/
+    width:350px; margin:50px; padding: 0px;  
     }
