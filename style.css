@@ -1,11 +1,10 @@
 /*importation police de caractère*/
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
 
-body{
-    background:#DEEBFF;
-    }
+
 .container {
-    width: 1440px;
+    max-width: 1800px;
+    min-width: 1250px;
     background:#ffffff;
     margin: auto;
     font-family: 'Raleway', sans-serif;
@@ -15,7 +14,7 @@ body{
     margin:0;
     }
 ul{
-    list-style:none; margin-right: 0px;
+    list-style:none;
     padding: 0px;
     }
 a {
@@ -28,9 +27,8 @@ a:link {
 a:visited {
     color: #000000;
     }
-
 section, header{
-    margin-left: 50px; margin-right: 50px;
+    margin-left: 3.47%; margin-right: 3.47%;
     }
 section img {
     width: 100%;
@@ -42,35 +40,49 @@ h1{
 h2{
     font-size: 1.2em;
     }
+h3{
+    font-size: 1em;
+    }
 
 /*HEADER*/
 header{
     height:130px;
     display:flex;
-    justify-content:space-between; align-items: center;
+    justify-content:flex-end; align-items: center;
     }
 .logo{
     height: 40px;
+    margin-right: auto;
+    justify-self: flex-start;
     }
 
 /*NAV*/
 nav{
-    /*background:green;*/
-    height:130px;
+    height:100%; width:20.8%;
     display:flex;
-    justify-content: flex-end; align-items: center;
+    align-items: center;
     }
 .ulnav{
+    width:100%; height:100%;
     display: flex;
-    /*justify-content: flex-end;*/
     }
-nav a{
-    width:150px; height:130px;
-    border-top: 5px solid #ffffff;
+.anav{
+    width:10.42%; height:100%;
+    font-weight: bold;
+    }
+.anav a{
+    color:#0065fc;
+    }
+.linav{
+    width:50%;
+    }
+header a{
+    height:100%;
+    border-top: 4px solid #ffffff;
     display: flex;
     align-items: center; justify-content: center;
     }
-nav a:hover{
+header a:hover{
     color:#0065fc;
     border-top: 5px solid #0065fc;
     }
@@ -78,7 +90,7 @@ nav a:hover{
 /*SECTION 1 */    
 .section1{
     margin-top: 37px; margin-bottom: 37px;
-}
+    }
 .descsection1{
     margin-top: 10px; margin-bottom: 20px;
     }
@@ -92,17 +104,19 @@ label{
     }
 .label{
     background: #f2f2f2;
-    width:50px; height:50px;
+    width:3.5%; height:50px;
     border-bottom-left-radius: 20px; border-top-left-radius: 20px;
     }
 .rechercheville{
-    width:230px; height:50px;
+    width:16%; height:50px;
     border-top: 2px solid #f2f2f2; border-bottom: 2px solid #f2f2f2; border-right: 0px; border-left: 0px;
+    font-size: 1.2em;
     }
 .btnrechercher{
     background: #0065fc;
     color:#ffffff;
-    width:132px; height:50px;
+    width:9.2%; height:50px;
+    font-size: 1.2em;
     border-bottom-right-radius: 20px; border-top-right-radius: 20px;
     border:0px;
 }
@@ -113,10 +127,12 @@ label{
     align-items: center;
     }
 .divfiltres{
-    margin-left: 11px; margin-right: 11px;
-    padding: 10px; padding-left: 0px;
+    margin-left: 0.8%; margin-right: 0.8%;
+    padding: 0.8%; padding-left: 0%;
+    font-size: 1.2em;
     border-radius: 60px;
     border: 2px solid #f2f2f2;
+    font-weight: bold;
     }
 .divfiltres:hover{
     background: #deebff;
@@ -148,8 +164,10 @@ label{
     margin-right: 20px;
     }
     
-
 /*SECTION 2 : HEBERGEMENTS*/
+.hidden{
+    display: none;
+    }
 .section2{
     display: flex;
     justify-content: space-between;
@@ -159,21 +177,28 @@ aside{
     border-radius: 20px;
     }
 .aside1{
-    width:880px;
+    width:65.67%;
+    }
+.figcaption p{
+    font-size: 0.9em;
     }
 /*Hébergements*/
-aside h1, .phebergements{
-    margin-left:40px; margin-top:45px;
+aside h2, .phebergements{
+    margin-left:5%; margin-top:45px;
+    font-size: 1.5em;
+    }
+.phebergements{
+    margin-bottom: 40px;
     }
 .divheber{
-    width:800px; height:430px; margin-left:40px; margin-left:40px; margin-top:20px; margin-bottom:20px;
+    width:90%; height:430px; margin-left:5%; margin-left:5%; margin-top:20px; margin-bottom:20px;
     display:flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-content: space-between;
     }
 .divhebergements{
-    width:246px; height:200px;
+    width:31%; height:200px;
     }
 .figboxhebergements{
     background-color: white;
@@ -183,34 +208,48 @@ aside h1, .phebergements{
     }
 .imgboxhebergements{
     border: 4px solid #ffffff;
-    width:238px;
+    width:97%;
     height:60%;
     object-fit: cover;
     }
+.figboxhebergements .figcaption{
+    height:35%;
+    margin-left: 5%;
+}
 /*Populaires*/
 .aside2{
-    width:420px;
+    width:31.34%;
     }
-.aside2 figcaption{
+.aside2 .figcaption{
     position: relative;
     top: -140px;
-    left: 150px;
-    width: 190px; height:130px;
+    left: 42%;
+    width: 55.9%; height:130px;
+    display: flex;
+    flex-direction: column;
     }
-.fas fa-star{
-    color:#0065FC;
+.titrepopulaires{
+    display: flex;
+    justify-content: space-between;
     }
+.aside2 h2{
+        margin-left:9.52%; margin-top:45px;
+        }
+.aside2 span{
+        margin-right:9.52%; margin-top:45px;
+        font-size: 1.5em;
+        }
 .h1populaires{
     margin-left:40px; margin-top:45px;
     }
 .divpop{
-    width:340px; height:493px; margin-left:40px; margin-left:40px; margin-top:20px; margin-bottom:20px;
+    width:80.96%; height:493px; margin-left:9.52%; margin-left:9.52%; margin-top:20px; margin-bottom:20px;
     display:flex;
     flex-direction:column;
     justify-content: space-between;
     }
 .divpopulaires{
-    width:340px; height:143px;
+    width:100%; height:143px;
     }
 .figboxpopulaires{
     background-color: white;
@@ -233,19 +272,26 @@ aside h1, .phebergements{
     justify-content: flex-start;
     }
 .etoilegrise{
-    color:#f2f2f2;
+    color:#f2f2f2; padding: 0%; margin: 0%;
+    }
+.aside2 .etoiles{
+    height:70%;
+    align-items: flex-end;
     }
 
 /*SECTION 3 : ACTIVITES*/
 .section3{
     margin-top: 65px; margin-bottom: 55px;
     }
+.section3 h1{
+    margin-bottom: 25px;
+    }
 .divsection3{
     height: 450px;
     display:flex; justify-content: space-between;
     }
 .divsection3 div{
-    width:302px;
+    width:22.54%;
     }
 .boxactivites2{
     display: flex;
@@ -254,10 +300,10 @@ aside h1, .phebergements{
     }
 .section3 figure{
     background-color: white;
-    margin:0px;
     border-radius: 20px;
     box-shadow: 4px 4px 20px #f2f2f2;
     width: 100%;
+    font-weight: bold;
     }
 figure img{
     object-fit: cover;
@@ -292,17 +338,25 @@ figure img{
 .imgboxactivites5{
     height:73.7%;
     }
+.divsection3 .figcaption{
+    padding-left: 4%;
+    height:50px; width:95%;
+    display: flex;
+    align-items: center;
+    }
 
 /*FOOTER*/
 footer{
     background:#f2f2f2;
     display: flex;
     justify-content: flex-start;
-    /*margin-top: 55px;*/
     }
 footer h2{
-    padding: 0px; margin:0px;
+    padding: 0%; margin-bottom: 25px;
     }
 footer div{
-    width:350px; margin:50px; padding: 0px;  
+    width:24.30%; margin:3.47%; padding: 0%;  
+    }
+footer li{
+    margin-bottom: 12px;    
     }
