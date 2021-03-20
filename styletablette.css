@@ -1,0 +1,8 @@
+/*----VERSION TABLETTE/INTERMEDIAIRE----*/
+/* Sur tous types d'écran, quand la largeur de la fenêtre est comprise entre 768px et 1200px */
+@media all and (min-width: 768px) and (max-width: 1200px)
+{
+section, footer{
+    display:none;
+    }
+}

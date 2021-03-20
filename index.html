@@ -2,7 +2,9 @@
 <html lang="fr">
     <head>
         <meta charset="utf-8" />
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" media="screen and (max-width: 767px)" href="stylesmartphone.css" />
+        <link rel="stylesheet" media="screen and (min-width: 768px) and (max-width: 1200px)" href="styletablette.css" />
+        <link rel="stylesheet" media="screen and (min-width: 1201px)" href="style.css" />
         <script src="https://kit.fontawesome.com/ae747f20c0.js" crossorigin="anonymous"></script>
         <title>Projet 2 : intégration maquette Reservia</title>
     </head>
@@ -28,6 +30,7 @@
                         <label class="label" for="rechercheville"><i class="fas fa-map-marker-alt"></i></label>
                         <input id="rechercheville" class="rechercheville" name="rechercheville" placeholder="  Marseille, France" type="search">
                         <input type="submit" value="Rechercher" class="btnrechercher">
+                        <div class="btnrecherchersmartphone"><a href="" class="btnrechsmart"><i class="fas fa-search"></a></i></div>
                     </form>
                 </div>
                 <div class="filtres">
@@ -37,16 +40,16 @@
                     <div class="divfiltres"><span class="iconerom"><i class="fas fa-heart"></i></span>Romantique</div>
                     <div class="divfiltres"><span class="icone"><i class="fas fa-dog"></i></span>Animaux autorisés</div>
                 </div>
-                <div class="filtres">
+                <div class="filtres2">
                     <span class="iconeinfo"><i class="fas fa-info"></i></span><P>Plus de 500 logements sont disponibles dans cette ville</p>
                 </div>
             </section>
             <!--2ème section Hébergements et populaires-->
             <main>
-                <section id="hebergements">
+                <section>
                     <h2 class="hidden">Hébergements à Marseille et les plus populaires</h2>
                     <div class="section2">   
-                        <aside class="aside1">
+                        <aside class="aside1" id="hebergements">
                             <h2>Hébergements à Marseille</h2>
                             <div class="divheber">
                                 <div class="divhebergements">
@@ -146,7 +149,7 @@
                                     </figure> 
                                 </div>
                             </div>
-                            <P class="phebergements"><a href=""><b>Afficher plus</b></a></P>
+                            <P class="phebergements"><a href="">Afficher plus</a></P>
                         </aside>
                         <aside class="aside2">
                             <div class="titrepopulaires">
