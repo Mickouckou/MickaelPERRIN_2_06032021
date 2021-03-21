@@ -5,7 +5,7 @@
 /*Sur tous types d'écran, quand la largeur de la fenêtre est supérieure à 1201px*/
 .container {
     max-width: 1800px;
-    min-width: 1250px;
+    min-width: 1180px;
     background:#ffffff;
     margin: auto;
     font-family: 'Raleway', sans-serif;
@@ -106,7 +106,7 @@ label{
 .label{
     background: #f2f2f2;
     width:3.5%; height:50px;
-    border-bottom-left-radius: 20px; border-top-left-radius: 20px;
+    border-bottom-left-radius: 15px; border-top-left-radius: 15px;
     }
 .rechercheville{
     width:16%; height:50px;
@@ -116,9 +116,9 @@ label{
 .btnrechercher{
     background: #0065fc;
     color:#ffffff;
-    width:9.2%; height:50px;
+    width:9.5%; height:50px;
     font-size: 1.2em;
-    border-bottom-right-radius: 20px; border-top-right-radius: 20px;
+    border-bottom-right-radius: 15px; border-top-right-radius: 15px;
     border:0px;
 }
 .btnrecherchersmartphone{
