@@ -1,11 +1,11 @@
 /*importation police de caractère*/
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
 
-/*----VERSION SMARTPHONES----*/
-/*Sur tous types d'écran, quand la largeur de la fenêtre est inférieure à 768px*/
+/*----VERSION DESKTOP----*/
+/*Sur tous types d'écran, quand la largeur de la fenêtre est supérieure à 1201px*/
 .container {
-    max-width:767px;
-    min-width:375px;
+    max-width: 1800px;
+    min-width: 1180px;
     background:#ffffff;
     margin: auto;
     font-family: 'Raleway', sans-serif;
@@ -14,8 +14,8 @@
 *{
     margin:0;
     }
-.section1, .aside1, .section3{
-    margin-left: 5.33%; margin-right: 5.33%;
+section, header{
+    margin-left: 3.47%; margin-right: 3.47%;
     }
 ul{
     list-style:none;
@@ -47,22 +47,21 @@ h3{
 
 /*HEADER*/
 header{
-    height:130px; /*width: 100%;
-    position: fixed; margin-top: 0%;*/
-    background: #ffffff;
+    height:130px;
     display:flex;
-    flex-flow: row wrap;
-    align-content: space-between;
-    justify-content: space-between;
+    justify-content:flex-end; align-items: center;
     }
 .logo{
-    height: 40px; margin-left: 5.33%; padding-top:30px;
+    height: 40px;
+    margin-right: auto;
+    justify-self: flex-start;
     }
 
 /*NAV*/
 nav{
-    width:100%; height:40%;
-    order:1;
+    height:100%; width:20.8%;
+    display:flex;
+    align-items: center;
     }
 .ulnav{
     width:100%; height:100%;
@@ -70,7 +69,7 @@ nav{
     }
 .anav{
     font-weight: bold;
-    margin-right: 5.33%; padding-top:40px;
+    width:10.42%; height:100%;
     }
 .anav a{
     color:#0065fc;
@@ -78,18 +77,18 @@ nav{
 .linav{
     width:50%;
     }
-.linav a{
+header a{
     height:100%;
-    border-bottom: 4px solid #deebff;
+    border-top: 4px solid #ffffff;
     display: flex;
     align-items: center; justify-content: center;
     }
-.linav a:hover{
+header a:hover{
     color:#0065fc;
-    border-bottom: 4px solid #0065fc;
+    border-top: 5px solid #0065fc;
     }
 
-/*SECTION 1 */    
+/*SECTION 1*/    
 .section1{
     margin-top: 37px; margin-bottom: 37px;
     }
@@ -106,46 +105,34 @@ label{
     }
 .label{
     background: #f2f2f2;
-    width:12%; height:50px;
+    width:3.5%; height:50px;
     border-bottom-left-radius: 15px; border-top-left-radius: 15px;
     }
 .rechercheville{
-    width:82%; height:50px;
+    width:16%; height:50px;
     border-top: 2px solid #f2f2f2; border-bottom: 2px solid #f2f2f2; border-right: 0px; border-left: 0px;
     font-size: 1.2em;
     }
 .btnrechercher{
-    display: none;
-    }
-.btnrecherchersmartphone{
     background: #0065fc;
     color:#ffffff;
-    width:12%; height:50px;
-    text-align: center;
-    margin-left: -6%;
+    width:9.5%; height:50px;
     font-size: 1.2em;
-    border-radius: 15px;
-    border:0;
-    }
-.btnrechsmart:link {
-    color: #ffffff;
-    }
-.btnrechsmart:visited {
-    color: #ffffff;
-    }
-.filtres{
-    margin-top: 27px; margin-bottom: 32px;
-    display: flex;
-    flex-direction:row;
-    flex-wrap: wrap;
-    align-content: flex-end;
-    }
-.filtres h2{
-    width:80%; margin-top: 5px; margin-bottom: 5px;
+    border-bottom-right-radius: 15px; border-top-right-radius: 15px;
+    border:0px;
 }
+.btnrecherchersmartphone{
+    display: none;
+    }
+.filtres, .filtres2{
+    margin-top: 32px; margin-bottom: 32px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    }
 .divfiltres{
-    margin-left: 0%; margin-right: 3%; margin-top: 5px; margin-bottom: 5px;
-    padding: 2.5%; padding-left: 0%;
+    margin-left: 0.8%; margin-right: 0.8%;
+    padding: 0.8%; padding-left: 0%;
     font-size: 1.2em;
     border-radius: 60px;
     border: 2px solid #f2f2f2;
@@ -171,15 +158,7 @@ label{
 .iconerom{
     padding: 10px 12px;
     }
-.filtres2{
-    margin-top: 27px; margin-bottom: 32px;
-    display: flex;
-    }
-.filtres2 p{
-    margin-top:5px;
-    }
 .iconeinfo{
-    align-self: flex-start;
     background: #ffffff;
     border: 1px solid #deebff;
     color:#0065fc;
@@ -189,25 +168,64 @@ label{
     margin-right: 20px;
     }
 
+   
 /*SECTION 2 : HEBERGEMENTS*/
 .hidden{
     display: none;
     }
 .section2{
     display: flex;
-    flex-direction: column-reverse;
+    justify-content: space-between;
+    }
+aside{
+    background: #f2f2f2;
+    border-radius: 20px;
+    }
+.aside1{
+    width:65.67%;
     }
 .figcaption p{
     font-size: 0.9em;
     }
+/*Hébergements*/
 aside h2{
-    margin-left:5.33%; margin-top:45px;
+    margin-left:5%; margin-top:45px;
     font-size: 1.5em;
     }
+.phebergements{
+    margin-bottom: 40px; margin-top:45px; margin-left:5%;
+    font-weight: bold;
+    font-size: 1.2em;
+    }
+.divheber{
+    width:90%; height:430px; margin-left:5%; margin-left:5%; margin-top:20px; margin-bottom:20px;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+    }
+.divhebergements{
+    width:31%; height:200px;
+    }
+.figboxhebergements{
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 4px 4px 20px #f2f2f2;
+    width:100%; height:100%;
+    }
+.imgboxhebergements{
+    border: 4px solid #ffffff;
+    width:97%;
+    height:60%;
+    object-fit: cover;
+    }
+.figboxhebergements .figcaption{
+    height:35%;
+    margin-left: 5%;
+}
 /*Populaires*/
 .aside2{
-    width:100%; margin-left:0%; margin-right: 0%;
-    background: #f2f2f2;
+    width:31.34%;
     }
 .aside2 .figcaption{
     position: relative;
@@ -221,12 +239,15 @@ aside h2{
     display: flex;
     justify-content: space-between;
     }
+.aside2 h2{
+        margin-left:9.52%; margin-top:45px;
+        }
 .aside2 span{
-        margin-right:5.33%; margin-top:45px;
+        margin-right:9.52%; margin-top:45px;
         font-size: 1.5em;
         }
 .divpop{
-    width:89.34%; height:493px; margin-left:5.33%; margin-left:5.33%; margin-top:20px; margin-bottom:20px;
+    width:80.96%; height:493px; margin-left:9.52%; margin-left:9.52%; margin-top:20px; margin-bottom:20px;
     display:flex;
     flex-direction:column;
     justify-content: space-between;
@@ -252,73 +273,35 @@ aside h2{
 .etoiles{
     color:#0065FC;
     display: flex;
-    justify-content: flex-start; align-items: flex-end;
+    justify-content: flex-start;
     }
 .etoilegrise{
-    color:#f2f2f2;
+    color:#f2f2f2; padding: 0%; margin: 0%;
+    line-height: 0;
     }
 .aside2 .etoiles{
-    height:68%;
+    height:70%;
+    align-items: flex-end;
     }
-/*Hébergements*/
-.aside1{
-    width:89.34%; margin-left:5.33%; margin-left:5.33%;
-    }
-.aside1 h2{
-    margin-left:0%;
-    }
-.phebergements{
-    margin-bottom: 40px; margin-top:45px;
-    font-weight: bold;
-    font-size: 1.2em;
-    }
-.divheber{
-    width:100%; height:1250px; margin-top:20px; margin-bottom:20px;
-    display:flex;
-    flex-direction: column;
-    justify-content: space-between;
-    }
-.divhebergements{
-    width:100%; height:200px;
-    }
-.figboxhebergements{
-    background-color: white;
-    border-radius: 20px;
-    box-shadow: 4px 4px 20px #f2f2f2;
-    width:100%; height:100%;
-    }
-.imgboxhebergements{
-    border: 4px solid #ffffff;
-    width:97%;
-    height:60%;
-    object-fit: cover;
-    }
-.figboxhebergements .figcaption{
-    height:35%;
-    margin-left: 5%;
-}
 
 /*SECTION 3 : ACTIVITES*/
 .section3{
-    margin-top: 15px; margin-bottom: 55px;
+    margin-top: 65px; margin-bottom: 55px;
     }
 .section3 h1{
     margin-bottom: 25px;
     }
 .divsection3{
-    height:1240px;
-    display:flex; 
-    flex-direction: column;
-    justify-content: space-between;
+    height: 450px;
+    display:flex; justify-content: space-between;
     }
 .divsection3 div{
-    width:100%;
+    width:22.54%;
     }
 .boxactivites2{
-    height:400px;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    align-content: space-between;
     }
 .section3 figure{
     background-color: white;
@@ -330,15 +313,39 @@ aside h2{
 figure img{
     object-fit: cover;
     }
-.figboxactivites1, .figboxactivites2, .figboxactivites3, .figboxactivites4, .figboxactivites5{
-    height: 190px;
+.figboxactivites1{
+    height: 100%;
     }
-.imgboxactivites, .imgboxactivites2, .imgboxactivites3, .imgboxactivites4, .imgboxactivites5{
-    height:71%;
+.figboxactivites2{
+    height: 53%;
+    }
+.figboxactivites3{
+    height: 37%;
+    }
+.figboxactivites4{
+    height: 44%;
+    }
+.figboxactivites5{
+    height:47%;
+    }
+.imgboxactivites{
+    height:87.5%;
+    }
+.imgboxactivites2{
+    height:76.7%;
+    }
+.imgboxactivites3{
+    height:66%;
+    }
+.imgboxactivites4{
+    height:71.2%;
+    }
+.imgboxactivites5{
+    height:73.7%;
     }
 .divsection3 .figcaption{
     padding-left: 4%;
-    height:29%; width:95%;
+    height:50px; width:95%;
     display: flex;
     align-items: center;
     }
@@ -347,14 +354,13 @@ figure img{
 footer{
     background:#f2f2f2;
     display: flex;
-    flex-direction: column;
     justify-content: flex-start;
     }
 footer h2{
     padding: 0%; margin-bottom: 25px;
     }
 footer div{
-    width:89.34%; margin:5.33%; padding: 0%;  
+    width:24.30%; margin:3.47%; padding: 0%;  
     }
 footer li{
     margin-bottom: 12px;    
