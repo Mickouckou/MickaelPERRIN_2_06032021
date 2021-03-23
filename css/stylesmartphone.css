@@ -242,6 +242,9 @@ aside h2{
     display:flex;
     flex-direction: row;
     }
+.figboxpopulaires a{
+    width:100%;
+    }
 .imgboxpopulaires{
     border-top-right-radius: 0px; border-bottom-left-radius: 20px;
     border: 4px solid #ffffff;
